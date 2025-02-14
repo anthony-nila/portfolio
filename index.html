@@ -6,6 +6,169 @@
     <title>Davide Simone - Frontend Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+    --bg-color: #011627;
+    --text-color: #E5E9F0;
+    --accent-color: #4D5BCE;
+    --comment-color: #607B96;
+    --highlight-color: #4D5BCE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Fira Code', monospace;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.gradient-bg {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background: radial-gradient(circle, rgba(67,217,173,0.15) 0%, rgba(76,86,190,0.15) 50%, transparent 100%);
+    filter: blur(90px);
+    z-index: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(96, 123, 150, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    color: var(--comment-color);
+}
+
+.nav-links a {
+    color: var(--comment-color);
+    text-decoration: none;
+    margin-left: 2rem;
+    padding: 1rem 0;
+}
+
+.nav-links a.active {
+    color: var(--text-color);
+    border-bottom: 3px solid #FEA55F;
+}
+
+.contact-link {
+    color: var(--text-color) !important;
+}
+
+main {
+    padding: 4rem 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.intro {
+    margin-bottom: 3rem;
+}
+
+.greeting {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.role {
+    color: #4D5BCE;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.code-block {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.code-line {
+    margin-bottom: 0.5rem;
+}
+
+.comment {
+    color: var(--comment-color);
+}
+
+.const {
+    color: #4D5BCE;
+}
+
+.variable {
+    color: #43D9AD;
+}
+
+.string {
+    color: #E99287;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    border-top: 1px solid rgba(96, 123, 150, 0.3);
+    z-index: 1;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--comment-color);
+}
+
+.social-icon {
+    color: var(--comment-color);
+    text-decoration: none;
+    padding: 0.5rem;
+    border-left: 1px solid rgba(96, 123, 150, 0.3);
+}
+
+.github-link {
+    margin-left: auto;
+    color: var(--comment-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.github-link i {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .nav-links a {
+        margin-left: 1rem;
+    }
+}
+    </style>
 </head>
 <body>
     <div class="gradient-bg"></div>
@@ -75,5 +238,168 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        :root {
+    --bg-color: #011627;
+    --text-color: #E5E9F0;
+    --accent-color: #4D5BCE;
+    --comment-color: #607B96;
+    --highlight-color: #4D5BCE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Fira Code', monospace;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.gradient-bg {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background: radial-gradient(circle, rgba(67,217,173,0.15) 0%, rgba(76,86,190,0.15) 50%, transparent 100%);
+    filter: blur(90px);
+    z-index: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(96, 123, 150, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    color: var(--comment-color);
+}
+
+.nav-links a {
+    color: var(--comment-color);
+    text-decoration: none;
+    margin-left: 2rem;
+    padding: 1rem 0;
+}
+
+.nav-links a.active {
+    color: var(--text-color);
+    border-bottom: 3px solid #FEA55F;
+}
+
+.contact-link {
+    color: var(--text-color) !important;
+}
+
+main {
+    padding: 4rem 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.intro {
+    margin-bottom: 3rem;
+}
+
+.greeting {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.role {
+    color: #4D5BCE;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.code-block {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.code-line {
+    margin-bottom: 0.5rem;
+}
+
+.comment {
+    color: var(--comment-color);
+}
+
+.const {
+    color: #4D5BCE;
+}
+
+.variable {
+    color: #43D9AD;
+}
+
+.string {
+    color: #E99287;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    border-top: 1px solid rgba(96, 123, 150, 0.3);
+    z-index: 1;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--comment-color);
+}
+
+.social-icon {
+    color: var(--comment-color);
+    text-decoration: none;
+    padding: 0.5rem;
+    border-left: 1px solid rgba(96, 123, 150, 0.3);
+}
+
+.github-link {
+    margin-left: auto;
+    color: var(--comment-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.github-link i {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .nav-links a {
+        margin-left: 1rem;
+    }
+}
+    </script>
 </body>
 </html>
